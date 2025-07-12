@@ -5,7 +5,6 @@ const cors = require("cors");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const app = express();
-const PORT = 3000;
 
 const API_KEY = process.env.GEMINI_API_KEY; // ⬅️ Use from .env file
 const genAI = new GoogleGenerativeAI(API_KEY);
@@ -90,6 +89,8 @@ app.post("/chat", async (req, res) => {
     res.status(500).json({ reply: "No reply :(", error: err.message });
   }
 });
+
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
