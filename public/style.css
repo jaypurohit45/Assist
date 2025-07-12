@@ -91,7 +91,7 @@ h1 {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #181818;
+  /* background-color: #181818; */
   border-top: 1px solid #333;
   position: fixed;
   bottom: 0;
@@ -101,6 +101,7 @@ h1 {
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.4);
   z-index: 100;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 #userInput {
