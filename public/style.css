@@ -60,7 +60,7 @@ h1 {
 
 .bot {
   align-self: flex-start;
-  background-color: #1e1e1e;
+  background-color: #2d2d2d;
   color: #10a37f;
   border-bottom-left-radius: 0;
   margin-right: auto;
@@ -79,7 +79,7 @@ h1 {
 }
 
 .bot pre {
-  background: #1e1e1e;
+  background: #2d2d2d;
   padding: 12px;
   color: #eee;
   border-radius: 6px;
