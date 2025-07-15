@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Assist</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
+
 <body>
-  <body>
   <h1>Assist</h1>
 
-  <div class="chat-container" id="chatBox"></div>
-
-  <div class="chat-input-wrapper">
-    <input type="text" id="userInput" placeholder="Ask anything..." />
-    <button id="sendBtn">Send</button>
+  <div class="chat-container" id="chatBox">
+    <!-- Chat messages go here -->
   </div>
 
-  <script src="script.js"></script>
-</body>
+  <!-- Chat input wrapper -->
+  <div class="chat-input-wrapper">
+  <input type="text" id="userInput" placeholder="Ask anything..." />
+
+  <!-- Hidden file inputs -->
+  <input type="file" id="fileInput" accept=".txt" style="display: none;" />
+  <input type="file" id="imageInput" accept="image/*" style="display: none;" />
+
+  <!-- Action buttons -->
+  <button id="voice">🎤</button>
+  <button id="uploadBtn">➕</button>
+  <button id="sendBtn">Send</button>
+
+  <!-- Upload menu popup -->
+  <div id="uploadMenu" class="upload-menu">
+    <button id="uploadTextOption">📄 Upload Text File</button>
+    <button id="uploadImageOption">🖼️ Upload Image</button>
+  </div>
+</div>
+
 
   <script src="script.js"></script>
 </body>
+
 </html>
